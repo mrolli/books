@@ -1,0 +1,359 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	border: 0;
+	font-family: "Lucida Grande", Verdana, Arial, Tahoma, sans-serif;
+	font-size: 0.7em;
+	line-height: 1.4em;
+	background-color: #EBEBEB;
+	color: #000000;
+	behavior: url("Images/csshover.htc");
+}
+html {
+	border: 0;
+}
+/* Links */
+a:link, a:visited {
+	color: #000000;
+	text-decoration: none;
+}
+a:hover {
+	color: #000000;
+	text-decoration: none;
+}
+
+/* Image border */
+:link img, :visited img {
+	border: 0 none inherit;
+}
+img {
+	border: 0 none !important;
+}
+
+/* Clear */
+.clearBoth {
+    clear: both;
+	height: 0.01em;
+	font-size: 0.01em;
+	line-height: 0.01em;
+}
+
+#whole {
+	position: relative;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 100;
+	background-color: #ffffff;
+}
+
+#toolBar {
+	position: relative;
+	width: 100%;
+	/*height: 77px;*/
+	border-bottom: 1px solid #828282;
+	background-color: #C7C7C7;
+	background-image: url("../Images/toolBar.jpg");
+	background-repeat: repeat-x;
+	text-align: center;
+}
+#mLeft {
+	position: relative;
+	width: 75px;
+	height: 25px;
+	float: left;
+	display: none;
+}
+#mRight {
+	position: relative;
+	width: 35px;
+	height: 25px;
+	float: right;
+	display: none;
+}
+img#m01 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 25px;
+	height: 25px;
+}
+img#m02 {
+	position: absolute;
+	left: 25px;
+	top: 0px;
+	width: 25px;
+	height: 25px;
+}
+img#m03 {
+	position: absolute;
+	left: 50px;
+	top: 0px;
+	width: 25px;
+	height: 25px;
+}
+img#m04 {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	width: 35px;
+	height: 25px;
+}
+h1 {
+	height: 25px;
+	line-height: 25px;
+	margin: 0em auto 0em auto;
+	padding: 0em;
+	font-size: 100%;
+	text-align: center;
+	vertical-align: bottom;
+	z-index: 2000;
+}
+
+#toolBarNav {
+	position: relative;
+	width: 100%;
+	min-height: 52px;
+	_height: 52px;
+	clear: both;
+	display: none;
+}
+#toolBarButtons {
+	position: relative;
+	width: 15%;
+	float: left;
+}
+#toolBarButtons img {
+	position: absolute;
+	display: block;
+}
+img.navBack {
+	width: 26px;
+	height: 23px;
+	top: 10px;
+	left: 8px;
+}
+img.navFWD {
+	width: 27px;
+	height: 23px;
+	top: 10px;
+	left: 34px;
+}
+img.navStats {
+	width: 30px;
+	height: 22px;
+	top: 10px;
+	left: 100px;
+}
+img.separator {
+	width: 1px;
+	height: 46px;
+	top: 0px;
+	left: 80px;
+}
+
+#index {
+	width: 84%;
+	float: right;
+	padding: 15px 8px 0px 0px;
+	text-align: right;
+	color: #E2E2E2;
+}
+#index a:link, #index a:visited {
+	color: #000000;
+	text-decoration: none;
+}
+#index a:hover {
+	color: #f1f1f1;
+	text-decoration: none;
+}
+
+table {
+	width: 100%;
+	border: 0;
+	margin: 0;
+	padding: 0;
+	table-layout: fixed;
+	border-collapse: collapse;
+}
+th {
+	_height: 15px;
+	min-height: 15px;
+	border-bottom: 1px solid #B2B2B2;
+	border-right: 1px solid #C3C3C3;
+	background-image: url("../Images/fields.jpg");
+	background-repeat: repeat-x;
+}
+td {
+	_height: 17px;
+	min-height: 17px;
+	border-bottom: 1px solid #EBF3FF;
+	border-right: 1px solid #C3C3C3;
+}
+.lastCol {
+	border-right: 0px solid #C3C3C3;
+}
+th, td {
+	padding: 0px 3px 0px 3px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	text-align: left;
+}
+th#incrementalNumber {
+	width: 50px;
+	text-align: center;
+}
+td.incrementalNumber {
+	text-align: right;
+}
+th#discsNum {
+	width: 40px;
+}
+td.discsNum {
+	text-align: right;
+}
+th#release {
+	width: 55px;
+}
+th#label {
+	width: 120px;
+}
+th#genre {
+	width: 120px;
+}
+
+/* TABLE HOVER CONFIG*/
+tr.cdRow:hover {
+	background-color: #738499;
+	color: #ffffff;
+	cursor: pointer;
+}
+
+/* CD INFO */
+td.cdInfo {
+	padding: 0px !important;
+	min-height: 0.01em !important;
+	_height: 0.01em !important;
+	white-space: normal;
+	overflow: visible;
+	border-bottom: 0px solid #EBF3FF !important;
+	border-right: 0px solid #C3C3C3 !important;
+}
+.divider {
+	width: 100%;
+	height: 10px;
+	margin: 0;
+	padding: 0;
+	background-image: url("../Images/divider.jpg");
+	background-repeat: repeat-x;
+	overflow: hidden;
+}
+.cdInfoContent {
+	width: 100%;
+	height: 100%;
+	background-color: #EBF3FF;
+}
+.cdInfoHead {
+	width: 100%;
+	min-height: 44px;
+	_height: 44px;
+	background-color: #9FAEC8;
+	border-bottom: 1px solid #A1A5A9;
+}
+h2 {
+	min-height: 44px;
+	_height: 44px;
+	line-height: 44px;
+	vertical-align: middle;
+	margin: 0;
+	padding: 0em 0em 0em 1em;
+	font-size: 200%;
+	color: #ffffff;
+}
+h2 span {
+	font-size: 50%;
+}
+img.stars {
+	width: 72px;
+	height: 12px;
+	margin: 1em 1em 0em 0em;
+	float: right;
+	display: block;
+}
+.cdInfoBody {
+	border-bottom: 1px solid #3F3F3F;
+}
+.cdInfoBodyInner {
+	margin: 2em;
+}
+.cdInfoBodyL {
+	width: 63%;
+	float: left;
+}
+.cdInfoBodyR {
+	width: 35%;
+	float: right;
+}
+p {
+	text-align: left;
+	margin: 0em 0em 0em 0em;
+	padding: 0em 0em 0em 0em;
+}
+.cdInfoBodyLL {
+	width: 59%;
+	float: left;
+}
+.cdInfoBodyLR {
+	width: 40%;
+	float: right;
+}
+p.summary {
+	clear: both;
+	padding: 1em 0em 0em 0em;
+	text-align: justify;
+}
+ol.trackList {
+	margin-top: 0;
+	margin-bottom: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+.cover {
+	float: left;
+	display: block;
+	width: 120px;
+	height: 120px;
+	margin: 0px 15px 0px 0px;
+}
+
+/* STATUS BAR */
+#statusBar {
+	position: relative;
+	width: 100%;
+	height: 25px;
+	line-height: 25px;
+	vertical-align: middle;
+	text-align: center;
+	clear: both;
+	background-image: url("../Images/statusBar.jpg");
+	background-repeat: repeat-x;
+	border-top: 1px solid #3F3F3F;
+	border-bottom: 1px solid #3D3D3D;
+	overflow: hidden;
+}
+
+img#frimlcom {
+	float: left;
+	width: 196px;
+	height: 25px;
+	margin: 0;
+	display: none;
+}
+img#cdpedia {
+	float: right;
+	width: 134px;
+	height: 25px;
+	margin: 0;
+	display: none;
+}
